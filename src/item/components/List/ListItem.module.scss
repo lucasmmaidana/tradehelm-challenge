@@ -1,0 +1,39 @@
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em 0;
+    list-style: none;
+
+    button {
+      background-color: transparent;
+      border: 0;
+      width:3em;
+      height: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      span {
+        display: block;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;  
+        position: absolute;
+        white-space: nowrap; 
+        width: 1px;
+      }
+      svg {
+        height: 1.8em;
+        width: 1.8em;
+        margin:0;
+        stroke: #717579;
+
+        &:hover {
+          stroke:  #4d5257
+        }
+      }
+    }
+  }

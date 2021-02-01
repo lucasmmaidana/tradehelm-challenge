@@ -2,10 +2,17 @@
 .container {
   width: 100%;
   max-width: 480px;
+  height:100vh;
+  padding:1.2em;
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 1em;
 }
 
 // Header
 .header {
+  padding-bottom: 1.2em;
+
   h1 {
     font-weight: 800;
     font-size: 2rem;
@@ -17,5 +24,19 @@
     font-weight: 300;
     font-size: 1.25rem;
     margin: 0;
+  }
+}
+
+// Buttons with icon
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width:1.5em;
+    height: 1.5em;
+    margin-left: -0.4em;
+    margin-right: 1em;
   }
 }
