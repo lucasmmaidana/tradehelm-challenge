@@ -1,22 +1,5 @@
 import {Item} from "./types";
 
-const MOCK: Item[] = [
-  {
-    id: 1,
-    text: "Sardinas",
-  },
-  {
-    id: 2,
-    text: "Atún",
-  },
-  {
-    id: 3,
-    text: "Choclo",
-  },
-];
-
-const ITEMS: Item[] = JSON.parse(localStorage.getItem("itemList") as string) || [];
-
 export default {
   list: (): Promise<Item[]> => {
     return new Promise<Item[]>((resolve, reject) => {
